@@ -99,8 +99,8 @@ def list_home_town_items():
         "population": 120000
     }
     home_town_items = []
-    for key in home_town:
-        home_town_items.append(f"{key} = {home_town[f"{key}"]}")
+    for key, value in home_town.items():
+        home_town_items.append(f"{key} = {value}")
     return home_town_items
 
 
